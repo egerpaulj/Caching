@@ -15,7 +15,7 @@ git clone --recurse-submodules https://github.com/egerpaulj/Caching.git
 OR
 
 ```
-git clone https://github.com/egerpaulj/Microservice.Amqp.git
+git clone https://github.com/egerpaulj/Caching.git
 git submodule init
 git submodule update
 ```
