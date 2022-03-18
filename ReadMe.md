@@ -92,7 +92,7 @@ see https://github.com/louthy/language-ext
 Start a Redis container for integration tests; run the startRedis.sh; or the command:
 
 ```
-docker run -d --rm --network development_network --name redis -p 6379:6379
+docker run -d --rm --network development_network --name redis -p 6379:6379 redis
 ```
 
 Alternatively update the **appSettings.Development** file to direct requests to your redis server
