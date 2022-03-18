@@ -24,19 +24,19 @@ public interface ICacheProvider
 }
 ```
 
-## StoreInCache<T>(Option<string> key, T value, double expirationDurationInSeconds = 0)
+## StoreInCache<T>(Option<string> key, T value, double expirationDurationInSeconds)
 
 Store an object or value in the Cache
 
-**key** - string identifier of the stored data
-**value** - Any object or value type
-**expirationDurationInSeconds** - once this duration expires, then the item is removed from the Cache
+- **key** - string identifier of the stored data
+- **value** - Any object or value type
+- **expirationDurationInSeconds** - once this duration expires, then the item is removed from the Cache
 
 ## TryOptionAsync<T> Get<T>(Option<string> key)
 
 Gets an object or value from the Cache
 
-**key** - string identifier of the stored data
+- **key** - string identifier of the stored data
 
 ## Redis
 
