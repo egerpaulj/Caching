@@ -9,7 +9,7 @@ High through performance can be gained by caching data in distributed systems:
 **Note:** Contains git submodule 
 
 ```
-git clone --recurse-submodules https://github.com/egerpaulj/Microservice.Amqp.git
+git clone --recurse-submodules https://github.com/egerpaulj/Caching.git
 ```
 
 OR
