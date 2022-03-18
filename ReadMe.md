@@ -2,7 +2,7 @@
 
 .NET library provides a high performance Generic Caching Solution.
 
-High through performance can be gained by caching data in distributed systems:
+High throughput performance can be gained by caching data in distributed systems:
 - Caching of frequently accessed data
 - Temporarily caching of, data accessed in bursts, of micro-service activities
 
