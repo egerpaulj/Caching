@@ -6,6 +6,21 @@ High through performance can be gained by caching data in distributed systems:
 - Caching of frequently accessed data
 - Temporarily caching of, data accessed in bursts, of micro-service activities
 
+**Note:** Contains git submodule 
+
+```
+git clone --recurse-submodules https://github.com/egerpaulj/Microservice.Amqp.git
+```
+
+OR
+
+```
+git clone https://github.com/egerpaulj/Microservice.Amqp.git
+git submodule init
+git submodule update
+```
+
+
 The following Interface is provided:
 
 ```
