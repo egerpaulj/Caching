@@ -57,7 +57,7 @@ namespace Caching.Redis
             {
                 var redisKey = GetRedisKey(key);
                 var result = await ExecuteResiliently(Database.StringGetAsync(redisKey), redisKey.ToString());
-                return await Task.FromResult(_jsonConverterProvider.Deserialize<T>(result.HasValue ? result.ToString() : string.Empty));
+                return await Task.FromResult(_jsonConverterProvider.Deserialize<T>(result.HasValue ? result.ToString().Trim('"') : string.Empty));
             };
         }
 

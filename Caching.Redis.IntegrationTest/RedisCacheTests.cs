@@ -43,12 +43,12 @@ namespace Caching.Redis.IntegrationTest
         public async Task StoreStrType_WhenResultRequest_ResultObtainedFromCache()
         {
             var key = "TestKey";
-            var data = "I am some test data";
+            var data = $"I am some test data: {Guid.NewGuid()}";
 
             await _testee.StoreInCache(key, data)
             .Bind<Unit, string>(_ => _testee.Get<string>(key))
             .Match(
-                res => Assert.AreEqual(data, res),
+                res => Assert.IsTrue(data.Equals(res)),
                 () => Assert.Fail("Failed to get value"),
                 ex => throw ex);
         }
